@@ -17,12 +17,22 @@ body {
     background-color: white;
 }
 
-.accordion {
-    width: 397px;
-    
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
 }
 
-.accordion .contentBx {    
+.total {
+    width: 397px;
+    margin: auto;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion .contentBx {
     border-bottom: 1px solid rgba(28, 28, 28, 0.1);
     /* border-top: 1px solid grey; */
     width: 100%;
@@ -60,7 +70,7 @@ section .subhead {
     font-weight: 400;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
-    margin-top: 1rem; 
+    margin-top: 1rem;
 }
 
 section .titulos p {
@@ -95,73 +105,52 @@ section .titulos p {
 
 .accordion .contentBx.active .content {
     height: 36rem;
+
     padding-left: 10px;
 }
 
 
-@media screen and (max-width:400px) {
-    .accordion .contentBx.active .content {
-        height: 670px;
-    }
-}
-
-@media screen and (max-width:350px) {
-    .accordion .contentBx.active .content {
-        height: 700px;
-    }
-}
-
-@media screen and (max-width:300px) {
-    .accordion .contentBx.active .content {
-        height: 800px;
-    }
-}
-
-
-
 [data-tab-content] {
     display: none;
-  }
-  
-  .active[data-tab-content] {
+}
+
+.active[data-tab-content] {
     display: block;
-  }
-    
-  
-  .tabs {
+}
+
+.tabs {
     display: flex;
     justify-content: start;
     list-style-type: none;
-    margin: 0;        
+    margin: 0;
     border-bottom: 1px solid rgba(28, 28, 28, 0.1);
-    width: 397px;    
-  }
-  
-  .tab {
+    width: 397px;
+}
+
+.tab {
     cursor: pointer;
-    padding: 10px;        
+    padding: 10px;
     line-height: 17px;
     background-color: transparent;
-    color: #1c1c1c;    
+    color: #1c1c1c;
     font-size: 14px;
     font-weight: 400;
     font-family: "Lato", Helvetica, Arial, sans-serif;
     text-transform: none;
-    cursor: pointer;  
-    transition: all 0.4s ease;  
-  }
-  
-  .tab.active {
-    color:#fd7c1d;
-    border-bottom: 3px solid rgba(253, 124, 29, 0.5);  
-    
-  }
- 
-  .tab-content {
-    margin:0;
-    
-  } 
-  .subhead1 {    
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.tab.active {
+    color: #fd7c1d;
+    border-bottom: 3px solid rgba(253, 124, 29, 0.5);
+}
+
+.tab-content {
+    margin: 0;
+}
+
+.subhead1 {
     position: relative;
     padding: 10px;
     line-height: 17px;
@@ -170,7 +159,7 @@ section .titulos p {
     font-size: 14px;
     font-weight: 400;
     font-family: "Rubik", sans-serif;
-    text-transform: none;      
+    text-transform: none;
 }
 
 .infoTab {
