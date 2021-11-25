@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    background-color: white;
+}
+
+.accordion {
+    width: 397px;
+    
+}
+
+.accordion .contentBx {    
+    border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+    /* border-top: 1px solid grey; */
+    width: 100%;
+}
+
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    line-height: 17px;
+    background-color: transparent;
+    color: #8C9090;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.accordion .contentBx .label::before {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    color: #8C9090;
+    font-family: "Rubik", sans-serif;
+}
+
+section .subhead {
+    font-size: 14px;
+    color: #8C9090;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    margin-top: 1rem; 
+}
+
+section .titulos p {
+    font-size: 14px;
+    color: #8C9090;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+}
+
+
+
+.accordion .contentBx.active .label::before {
+    content: "-";
+}
+
+.accordion .contentBx .content {
+    position: relative;
+    background-color: transparent;
+    color: #8C9090;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.accordion .contentBx.active .content {
+    height: 36rem;
+    padding-left: 10px;
+}
+
+
+@media screen and (max-width:400px) {
+    .accordion .contentBx.active .content {
+        height: 670px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .accordion .contentBx.active .content {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .accordion .contentBx.active .content {
+        height: 800px;
+    }
+}
+
+
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+    
+  
+  .tabs {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;        
+    border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+    width: 397px;    
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;        
+    line-height: 17px;
+    background-color: transparent;
+    color: #1c1c1c;    
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    text-transform: none;
+    cursor: pointer;  
+    transition: all 0.4s ease;  
+  }
+  
+  .tab.active {
+    color:#fd7c1d;
+    border-bottom: 3px solid rgba(253, 124, 29, 0.5);  
+    
+  }
+ 
+  .tab-content {
+    margin:0;
+    
+  } 
+  .subhead1 {    
+    position: relative;
+    padding: 10px;
+    line-height: 17px;
+    background-color: transparent;
+    color: #8C9090;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    text-transform: none;      
+}
+
+.infoTab {
+    font-size: 14px;
+    color: #8C9090;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    padding-left: 10px;
+}
